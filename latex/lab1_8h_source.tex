@@ -1,0 +1,50 @@
+\doxysection{lab1.\+h}
+\hypertarget{lab1_8h_source}{}\label{lab1_8h_source}\mbox{\hyperlink{lab1_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structFIO}{FIO}}\ \ \{}
+\DoxyCodeLine{00029\ \ \ \ \ std::string\ surname;}
+\DoxyCodeLine{00030\ \ \ \ \ std::string\ name;}
+\DoxyCodeLine{00031\ \ \ \ \ std::string\ patronymic;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{structFIO}{FIO}}(\textcolor{keyword}{const}\ std::string\ \&s,\ \textcolor{keyword}{const}\ std::string\ \&n,\ \textcolor{keyword}{const}\ std::string\ \&p);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator==(\textcolor{keyword}{const}\ \mbox{\hyperlink{structFIO}{FIO}}\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator!=(\textcolor{keyword}{const}\ \mbox{\hyperlink{structFIO}{FIO}}\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator>(\textcolor{keyword}{const}\ \mbox{\hyperlink{structFIO}{FIO}}\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator<(\textcolor{keyword}{const}\ \mbox{\hyperlink{structFIO}{FIO}}\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator>=(\textcolor{keyword}{const}\ \mbox{\hyperlink{structFIO}{FIO}}\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator<=(\textcolor{keyword}{const}\ \mbox{\hyperlink{structFIO}{FIO}}\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structSoldier}{Soldier}}\ \ \{}
+\DoxyCodeLine{00044\ \ \ \ \ std::string\ rank;}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{structFIO}{FIO}}\ fio;}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{int}\ platoonNumber;}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{int}\ age;}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{structSoldier}{Soldier}}(\textcolor{keyword}{const}\ std::string\ \&r,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structFIO}{FIO}}\ \&f,\ \textcolor{keywordtype}{int}\ pNum,\ \textcolor{keywordtype}{int}\ a);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator==(\textcolor{keyword}{const}\ \mbox{\hyperlink{structSoldier}{Soldier}}\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator!=(\textcolor{keyword}{const}\ \mbox{\hyperlink{structSoldier}{Soldier}}\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator>(\textcolor{keyword}{const}\ \mbox{\hyperlink{structSoldier}{Soldier}}\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator<(\textcolor{keyword}{const}\ \mbox{\hyperlink{structSoldier}{Soldier}}\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator>=(\textcolor{keyword}{const}\ \mbox{\hyperlink{structSoldier}{Soldier}}\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{bool}\ operator<=(\textcolor{keyword}{const}\ \mbox{\hyperlink{structSoldier}{Soldier}}\ \&other)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00057\ \};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{comment}{//\ а)\ Сортировка\ выбором}}
+\DoxyCodeLine{00060\ \textcolor{keywordtype}{void}\ selectionSort(std::vector<Soldier>\ \&soldiers);}
+\DoxyCodeLine{00061\ \textcolor{comment}{//\ в)\ Сортировка\ простыми\ вставками}}
+\DoxyCodeLine{00062\ \textcolor{keywordtype}{void}\ insertionSort(std::vector<Soldier>\ \&soldiers);}
+\DoxyCodeLine{00063\ \textcolor{comment}{//\ д)\ Пирамидальная\ сортировка}}
+\DoxyCodeLine{00064\ \textcolor{keywordtype}{void}\ heapify(std::vector<Soldier>\ \&soldiers,\ \textcolor{keywordtype}{int}\ n,\ \textcolor{keywordtype}{int}\ i);}
+\DoxyCodeLine{00065\ \textcolor{keywordtype}{void}\ heapSort(std::vector<Soldier>\ \&soldiers);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ std::vector<Soldier>\ readSoldiersFromFile(\textcolor{keyword}{const}\ std::string\ \&filename);}
+\DoxyCodeLine{00068\ \textcolor{keywordtype}{void}\ writeSoldiersToFile(\textcolor{keyword}{const}\ std::string\ \&filename,\ \textcolor{keyword}{const}\ std::vector<Soldier>\ \&soldiers);}
+
+\end{DoxyCode}

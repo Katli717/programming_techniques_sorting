@@ -1,0 +1,80 @@
+\doxysection{lab1.\+h File Reference}
+\hypertarget{lab1_8h}{}\label{lab1_8h}\index{lab1.h@{lab1.h}}
+
+
+Заголовочный файл для работы с данными о солдатах.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for lab1.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{lab1_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{lab1_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structFIO}{FIO}}
+\item 
+struct \mbox{\hyperlink{structSoldier}{Soldier}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{lab1_8h_a9fbaba1cf2810ac58f8198993a8d1cb7}\label{lab1_8h_a9fbaba1cf2810ac58f8198993a8d1cb7} 
+void {\bfseries selection\+Sort} (std\+::vector$<$ \mbox{\hyperlink{structSoldier}{Soldier}} $>$ \&soldiers)
+\item 
+\Hypertarget{lab1_8h_ac37f4fe03bab9d6f7a056da6ea8e8d22}\label{lab1_8h_ac37f4fe03bab9d6f7a056da6ea8e8d22} 
+void {\bfseries insertion\+Sort} (std\+::vector$<$ \mbox{\hyperlink{structSoldier}{Soldier}} $>$ \&soldiers)
+\item 
+\Hypertarget{lab1_8h_af481f069b51b1078d8dc1da325b2035a}\label{lab1_8h_af481f069b51b1078d8dc1da325b2035a} 
+void {\bfseries heapify} (std\+::vector$<$ \mbox{\hyperlink{structSoldier}{Soldier}} $>$ \&soldiers, int n, int i)
+\item 
+\Hypertarget{lab1_8h_a84753381c4cb5457123e872f9c609eb3}\label{lab1_8h_a84753381c4cb5457123e872f9c609eb3} 
+void {\bfseries heap\+Sort} (std\+::vector$<$ \mbox{\hyperlink{structSoldier}{Soldier}} $>$ \&soldiers)
+\item 
+\Hypertarget{lab1_8h_a8eaa13085dcf2e1457f2af55c7608929}\label{lab1_8h_a8eaa13085dcf2e1457f2af55c7608929} 
+std\+::vector$<$ \mbox{\hyperlink{structSoldier}{Soldier}} $>$ {\bfseries read\+Soldiers\+From\+File} (const std\+::string \&filename)
+\item 
+\Hypertarget{lab1_8h_adb5bf9364aa29a978550623fc6611b02}\label{lab1_8h_adb5bf9364aa29a978550623fc6611b02} 
+void {\bfseries write\+Soldiers\+To\+File} (const std\+::string \&filename, const std\+::vector$<$ \mbox{\hyperlink{structSoldier}{Soldier}} $>$ \&soldiers)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Заголовочный файл для работы с данными о солдатах. 
+
+Этот файл содержит определения структур для хранения данных о солдатах, а также функции для сортировки и работы с этими данными.
+
+Структуры\+:
+\begin{DoxyItemize}
+\item \doxylink{structFIO}{FIO}\+: хранит фамилию, имя и отчество солдата.
+\item \doxylink{structSoldier}{Soldier}\+: хранит данные о солдате, включая его звание, ФИО, номер взвода и возраст.
+\end{DoxyItemize}
+
+Операторы сравнения для структур\+:
+\begin{DoxyItemize}
+\item Операторы сравнения (==, !=, \texorpdfstring{$<$}{<}, \texorpdfstring{$>$}{>}, \texorpdfstring{$<$}{<}=, \texorpdfstring{$>$}{>}=) реализованы для структур \doxylink{structFIO}{FIO} и \doxylink{structSoldier}{Soldier}, что позволяет удобно сравнивать объекты этих структур.
+\end{DoxyItemize}
+
+Функции\+:
+\begin{DoxyItemize}
+\item selection\+Sort\+: сортирует вектор солдат с использованием алгоритма сортировки выбором.
+\item insertion\+Sort\+: сортирует вектор солдат с использованием алгоритма сортировки вставками.
+\item heapify\+: вспомогательная функция для пирамидальной сортировки.
+\item heap\+Sort\+: сортирует вектор солдат с использованием алгоритма пирамидальной сортировки.
+\item read\+Soldiers\+From\+File\+: читает данные о солдатах из указанного файла и возвращает вектор объектов \doxylink{structSoldier}{Soldier}.
+\item write\+Soldiers\+To\+File\+: записывает данные о солдатах в указанный файл. 
+\end{DoxyItemize}

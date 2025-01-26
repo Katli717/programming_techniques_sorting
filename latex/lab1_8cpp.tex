@@ -1,0 +1,70 @@
+\doxysection{lab1.\+cpp File Reference}
+\hypertarget{lab1_8cpp}{}\label{lab1_8cpp}\index{lab1.cpp@{lab1.cpp}}
+
+
+Реализация функций для работы с данными о солдатах.  
+
+
+{\ttfamily \#include "{}lab1.\+h"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+Include dependency graph for lab1.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lab1_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{lab1_8cpp_a9fbaba1cf2810ac58f8198993a8d1cb7}\label{lab1_8cpp_a9fbaba1cf2810ac58f8198993a8d1cb7} 
+void {\bfseries selection\+Sort} (std\+::vector$<$ \mbox{\hyperlink{structSoldier}{Soldier}} $>$ \&soldiers)
+\item 
+\Hypertarget{lab1_8cpp_ac37f4fe03bab9d6f7a056da6ea8e8d22}\label{lab1_8cpp_ac37f4fe03bab9d6f7a056da6ea8e8d22} 
+void {\bfseries insertion\+Sort} (std\+::vector$<$ \mbox{\hyperlink{structSoldier}{Soldier}} $>$ \&soldiers)
+\item 
+\Hypertarget{lab1_8cpp_af481f069b51b1078d8dc1da325b2035a}\label{lab1_8cpp_af481f069b51b1078d8dc1da325b2035a} 
+void {\bfseries heapify} (std\+::vector$<$ \mbox{\hyperlink{structSoldier}{Soldier}} $>$ \&soldiers, int n, int i)
+\item 
+\Hypertarget{lab1_8cpp_a84753381c4cb5457123e872f9c609eb3}\label{lab1_8cpp_a84753381c4cb5457123e872f9c609eb3} 
+void {\bfseries heap\+Sort} (std\+::vector$<$ \mbox{\hyperlink{structSoldier}{Soldier}} $>$ \&soldiers)
+\item 
+\Hypertarget{lab1_8cpp_a8eaa13085dcf2e1457f2af55c7608929}\label{lab1_8cpp_a8eaa13085dcf2e1457f2af55c7608929} 
+std\+::vector$<$ \mbox{\hyperlink{structSoldier}{Soldier}} $>$ {\bfseries read\+Soldiers\+From\+File} (const std\+::string \&filename)
+\item 
+\Hypertarget{lab1_8cpp_adb5bf9364aa29a978550623fc6611b02}\label{lab1_8cpp_adb5bf9364aa29a978550623fc6611b02} 
+void {\bfseries write\+Soldiers\+To\+File} (const std\+::string \&filename, const std\+::vector$<$ \mbox{\hyperlink{structSoldier}{Soldier}} $>$ \&soldiers)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Реализация функций для работы с данными о солдатах. 
+
+Этот файл содержит реализацию методов для структур \doxylink{structFIO}{FIO} и \doxylink{structSoldier}{Soldier}, а также функций для сортировки и работы с данными солдат.
+
+Реализация методов\+:
+\begin{DoxyItemize}
+\item FIO\+::\+FIO\+: Конструктор для инициализации объекта \doxylink{structFIO}{FIO} с заданными фамилией, именем и отчеством.
+\item Операторы сравнения для \doxylink{structFIO}{FIO}\+: реализованы операторы ==, !=, \texorpdfstring{$<$}{<}, \texorpdfstring{$>$}{>}, \texorpdfstring{$<$}{<}=, \texorpdfstring{$>$}{>}= для сравнения объектов \doxylink{structFIO}{FIO}.
+\item Soldier\+::\+Soldier\+: Конструктор для инициализации объекта \doxylink{structSoldier}{Soldier} с заданным званием, ФИО, номером взвода и возрастом.
+\item Операторы сравнения для \doxylink{structSoldier}{Soldier}\+: реализованы операторы ==, !=, \texorpdfstring{$<$}{<}, \texorpdfstring{$>$}{>}, \texorpdfstring{$<$}{<}=, \texorpdfstring{$>$}{>}= для сравнения объектов \doxylink{structSoldier}{Soldier}.
+\end{DoxyItemize}
+
+Функции сортировки\+:
+\begin{DoxyItemize}
+\item selection\+Sort\+: Реализует алгоритм сортировки выбором для сортировки вектора солдат.
+\item insertion\+Sort\+: Реализует алгоритм сортировки вставками для сортировки вектора солдат.
+\item heapify\+: Вспомогательная функция для поддержания свойств кучи в пирамидальной сортировке.
+\item heap\+Sort\+: Реализует алгоритм пирамидальной сортировки для сортировки вектора солдат.
+\end{DoxyItemize}
+
+Функции для работы с файлами\+:
+\begin{DoxyItemize}
+\item read\+Soldiers\+From\+File\+: Читает данные о солдатах из указанного файла и возвращает вектор объектов \doxylink{structSoldier}{Soldier}. Ожидает, что каждая строка файла содержит информацию о солдате в определенном формате.
+\item write\+Soldiers\+To\+File\+: Записывает данные о солдатах в указанный файл в текстовом формате.
+\end{DoxyItemize}
+
+Примечание\+: Все функции обработки и сортировки работают с вектором объектов \doxylink{structSoldier}{Soldier}, который содержит информацию о солдатах и их характеристиках. 

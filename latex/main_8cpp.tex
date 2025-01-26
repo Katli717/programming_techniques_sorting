@@ -1,0 +1,55 @@
+\doxysection{main.\+cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Главный файл программы для работы с данными о солдатах.  
+
+
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}lab1.\+h"{}}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Главный файл программы для работы с данными о солдатах. 
+
+Этот файл содержит основную функцию программы, которая управляет взаимодействием с пользователем и выполняет операции над данными о солдатах.
+
+Основные функции\+:
+\begin{DoxyItemize}
+\item main\+: Точка входа в программу.
+\begin{DoxyItemize}
+\item Инициализирует необходимые переменные и структуры данных.
+\item Предоставляет пользователю меню для выбора различных операций\+:
+\begin{DoxyEnumerate}
+\item Чтение данных о солдатах из файла.
+\item Запись данных о солдатах в файл.
+\item Сортировка данных о солдатах различными методами (сортировка выбором, вставками, пирамидальная сортировка).
+\item Вывод данных о солдатах на экран.
+\end{DoxyEnumerate}
+\item Обрабатывает ввод пользователя и выполняет соответствующие функции.
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Примечания\+:
+\begin{DoxyItemize}
+\item Программа ожидает, что файл с данными о солдатах будет находиться в определенном формате.
+\item Пользовательский ввод проверяется на корректность, чтобы избежать ошибок во время выполнения.
+\item После завершения операций программа завершает свою работу, освобождая все ресурсы. 
+\end{DoxyItemize}
