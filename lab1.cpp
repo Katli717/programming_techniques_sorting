@@ -185,9 +185,6 @@ std::vector<Soldier> readSoldiersFromFile(const std::string &filename)  {
         if (tokens.size() == 6)  {
             soldiers.push_back(Soldier(tokens[3], FIO(tokens[0], tokens[1], tokens[2]), std::stoi(tokens[4]), std::stoi(tokens[5])));
         }
-        else if (tokens.size() == 7)  {
-            soldiers.push_back(Soldier(tokens[3] + " " + tokens[4], FIO(tokens[0], tokens[1], tokens[2]), std::stoi(tokens[5]), std::stoi(tokens[6])));
-        }
         else {
             std::cerr << "Ошибка: неверный формат строки: " << line << std::endl;
         }
