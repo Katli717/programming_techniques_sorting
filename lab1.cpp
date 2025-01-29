@@ -179,7 +179,7 @@ std::vector<Soldier> readSoldiersFromFile(const std::string &filename)  {
         std::istringstream iss(line);
         std::vector<std::string> tokens;
         std::string token;
-        while (iss >> token)  {
+        while (std::getline(iss, token, ','))  {
             tokens.push_back(token);
         }
         if (tokens.size() == 6)  {
